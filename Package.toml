@@ -7,7 +7,7 @@
     # version
     version =              "0.0.1"
     # image URL
-    image =                "https://i.imgur.com/i3FxF7c.jpeg"
+    image =                "https://i.imgur.com/IN8V6Q6.png"
     # package type: 'script' (normal package), 'game-mode' (unique package - can only load one at a time), 'library' (doesn't start a Lua VM) or 'loading-screen' (special package for loading screen)
     type =                 "game-mode"
     # whether to force the custom map script to do not load

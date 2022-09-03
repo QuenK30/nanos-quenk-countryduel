@@ -9,4 +9,4 @@ end)
 
 
 Client.SetSteamRichPresence("CountryDuel - Made by QuenK")
-Client.SetDiscordActivity("CountryDuel - Made by QuenK", "Playing CountryDuel","", "CountryDuel")
+Client.SetDiscordActivity("CountryDuel - Made by QuenK", "Playing CountryDuel","https://i.imgur.com/IN8V6Q6.png", "CountryDuel")
