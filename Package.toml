@@ -1,22 +1,22 @@
 # package configurations
 [package]
     # package name
-    name =                 "CountryDuel"
+    name =                 "countryduel"
     # contributors
-    author =               "QuenK"
+    author =               "Quenk & Voltaism"
     # version
-    version =              "0.0.3"
+    version =              "0.1.0"
     # image URL
-    image =                "https://i.imgur.com/IN8V6Q6.png"
+    image =                ""
     # package type: 'script' (normal package), 'game-mode' (unique package - can only load one at a time), 'library' (doesn't start a Lua VM) or 'loading-screen' (special package for loading screen)
-    type =                 "game-mode"
+    type =                 "script"
     # whether to force the custom map script to do not load
     force_no_map_script =  false
     # auto destroy all entities spawned by this package when it unloads
     auto_cleanup =         true
     # packages requirements
     packages_requirements = [
-        
+        "rounds",
     ]
     # asset packs requirements
     assets_requirements = [
