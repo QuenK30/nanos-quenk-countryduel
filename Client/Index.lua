@@ -1,4 +1,4 @@
-local function enableInput(bEnabled)
+--[[local function enableInput(bEnabled)
     Client.SetInputEnabled(not bEnabled)
     print("Input enabled: " .. tostring(not bEnabled))
 end
@@ -17,7 +17,7 @@ Player.Subscribe("UnPossess", function(player, character)
         enableInput(false)
         print("UnPossessing character")
     end
-end)
+end)]]--
 
 Client.SetSteamRichPresence("CountryDuel - Made by QuenK")
 Client.SetDiscordActivity("CountryDuel - Made by QuenK", "Playing CountryDuel","https://i.imgur.com/IN8V6Q6.png", "CountryDuel")

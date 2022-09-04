@@ -143,11 +143,12 @@ Character.Subscribe("MoveCompleted", function(self, succeeded)
 
     if self == player_one_char then
         player_one:Possess(self)
-        player_one:SetValue("Duel", true)
         player_one_char:SetViewMode(ViewMode.FPS)
+        player_one_char:SetSpeedMultiplier(0)
     elseif self == player_two_char then
         player_two:Possess(self)
         player_two_char:SetViewMode(ViewMode.FPS)
+        player_two_char:SetSpeedMultiplier(0)
 
     end
 end)
