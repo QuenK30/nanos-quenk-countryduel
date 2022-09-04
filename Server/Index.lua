@@ -31,7 +31,6 @@ end
 
 Player.Subscribe("Spawn", function(new_player)
         player = player + 1
-
     if player_one == nil then
         player_one = new_player
         print("Player 1 is " .. player_one:GetName())
@@ -39,9 +38,13 @@ Player.Subscribe("Spawn", function(new_player)
         player_two = new_player
         print("Player 2 is " .. player_two:GetName())
     end
+
     print("Player "..player.." connected")
     if player == 2 then
         Server.BroadcastChatMessage("Two players connected, starting game")
+        Server.BroadcastChatMessage("Opponents are " .. player_one:GetName() .. " and " .. player_two:GetName())
+        Server.BroadcastChatMessage("Game will start in " .. time_until_duel .. " seconds")
+        
         Events.Call("StartGame")
     end
 end)
@@ -140,10 +143,15 @@ Character.Subscribe("MoveCompleted", function(self, succeeded)
 
     if self == player_one_char then
         player_one:Possess(self)
+        player_one:SetValue("Duel", true)
         player_one_char:SetViewMode(ViewMode.FPS)
     elseif self == player_two_char then
         player_two:Possess(self)
         player_two_char:SetViewMode(ViewMode.FPS)
 
     end
+end)
+
+Character.Subscribe("ViewModeChanged", function(self, old_state, new_state)
+    return true
 end)

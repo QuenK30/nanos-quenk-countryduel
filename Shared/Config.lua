@@ -1,4 +1,4 @@
-TIME_GAME = 60 -- Seconds
+TIME_GAME = 30 -- Seconds
 SPAWN_ONE = Vector(160,46,98)
 SPAWN_TWO = Vector(62,39,98)
 
