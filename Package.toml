@@ -5,7 +5,7 @@
     # contributors
     author =               "QuenK"
     # version
-    version =              "0.0.1"
+    version =              "0.0.3"
     # image URL
     image =                "https://i.imgur.com/IN8V6Q6.png"
     # package type: 'script' (normal package), 'game-mode' (unique package - can only load one at a time), 'library' (doesn't start a Lua VM) or 'loading-screen' (special package for loading screen)
